@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-08-19T03:35:02.671Z</updated>
+  <updated>2022-08-19T05:30:32.247Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -18,19 +18,18 @@
   
   <entry>
     <title>第一篇博客</title>
-    <link href="http://example.com/2022/08/18/hello-world/"/>
-    <id>http://example.com/2022/08/18/hello-world/</id>
+    <link href="http://example.com/2022/08/18/1/"/>
+    <id>http://example.com/2022/08/18/1/</id>
     <published>2022-08-18T12:27:22.549Z</published>
-    <updated>2022-08-19T03:35:02.671Z</updated>
+    <updated>2022-08-19T05:30:32.247Z</updated>
     
-    <content type="html"><![CDATA[<p>#胸中千言万语，此时却无语凝噎<br>简单记录一下这段过程吧</p><p>##1.新建文件夹<br>好吧，这个是万物之源，不过这不是普通的新建文件夹。<br>右键&gt;属性&gt;安全&gt;编辑，我把完全控制、修改、写入都打上了勾，这样子后面的操作才能进行。</p><p><img src="/../img/text_img/1/1.jpg" alt="图"></p>]]></content>
+    <content type="html"><![CDATA[<h1 id="胸中千言万语，此时却无语凝噎"><a href="#胸中千言万语，此时却无语凝噎" class="headerlink" title="胸中千言万语，此时却无语凝噎"></a>胸中千言万语，此时却无语凝噎</h1><p>简单记录一下这段过程吧</p><h2 id="1-新建文件夹"><a href="#1-新建文件夹" class="headerlink" title="1.新建文件夹"></a>1.新建文件夹</h2><p>好吧，这个是万物之源，不过这不是普通的新建文件夹。<br>右键&gt;属性&gt;安全&gt;编辑，我把完全控制、修改、写入都打上了勾，这样子后面的操作才能进行。<br><img src="/../img/text_img/1/1.jpg" alt="1"></p><h2 id="2-ssh"><a href="#2-ssh" class="headerlink" title="2.ssh"></a>2.ssh</h2><p>我不知道这个是不是可以多次使用<br>先随便找一个文件夹，git bush here,</p><blockquote><p>ssh</p></blockquote><p>生成ssh,</p><blockquote><p>ssh-keygen -t rsa-C “邮件地址”</p></blockquote><p>c盘 &gt; 用户 &gt; .ssh &gt; id_rsa.pub，用记事本打开全选复制，到github对应位置粘贴，添加ssh</p><p>测试ssh是否绑定成功,</p><blockquote><p>ssh -T git@github. com</p></blockquote><h2 id="3-hexo准备"><a href="#3-hexo准备" class="headerlink" title="3.hexo准备"></a>3.hexo准备</h2><p>目录下git bush here，初始化hexo</p><blockquote><p>hexo init</p></blockquote><p>在目录下打开_config.yml，直接到最后，把deploy改成</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: https://github.com/xxx/xxx.github.io.git</span><br><span class="line">  branch: main</span><br></pre></td></tr></table></figure><p>保存退出。<br>回到命令行，安装hexo-deployer-git自动部署发布工具:</p><blockquote><p>npm install hexo-deployer-git –save</p></blockquote><p>应该是只安装一次就行了</p><h2 id="4-生成本地博客"><a href="#4-生成本地博客" class="headerlink" title="4. 生成本地博客"></a>4. 生成本地博客</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure><p>打开浏览器进入本地博客地址就可以浏览了。<br>对文件的修改也会同步到本地博客。</p><h2 id="5-同步到网上"><a href="#5-同步到网上" class="headerlink" title="5.同步到网上"></a>5.同步到网上</h2><blockquote><p>hexo d</p></blockquote><p>跟着步骤走就行了</p>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;#胸中千言万语，此时却无语凝噎&lt;br&gt;简单记录一下这段过程吧&lt;/p&gt;
-&lt;p&gt;##1.新建文件夹&lt;br&gt;好吧，这个是万物之源，不过这不是普通的新建文件夹。&lt;br&gt;右键&amp;gt;属性&amp;gt;安全&amp;gt;编辑，我把完全控制、修改、写入都打上了勾，这样子后面的操作才能进行。&lt;/p&gt;
-</summary>
+    <summary type="html">&lt;h1 id=&quot;胸中千言万语，此时却无语凝噎&quot;&gt;&lt;a href=&quot;#胸中千言万语，此时却无语凝噎&quot; class=&quot;headerlink&quot; title=&quot;胸中千言万语，此时却无语凝噎&quot;&gt;&lt;/a&gt;胸中千言万语，此时却无语凝噎&lt;/h1&gt;&lt;p&gt;简单记录一下这段过程吧&lt;/p&gt;
+&lt;h2 id</summary>
       
     
     
